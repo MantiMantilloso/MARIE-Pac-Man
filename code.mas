@@ -1,0 +1,1481 @@
+/ --------- Test -------------------------------
+JnS Generarmapa
+Jns IncializarArray
+Jns InicializarPersonajes
+Jns MainLoop
+
+End, HALT
+
+/--------------------- Movimientos --------------------------------------
+InicioMov, HEX 07
+IndiceMovimiento, HEX 07 / 1 = Arriba, 2 = Abajo, 3= Izquierda, 4= Derecha
+InicioX, DEC 2		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 4		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 4		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 4		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 4		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 4		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 4		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 4		/−PAC−/
+DEC 4		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 1		/−INKY−/
+DEC 1		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 1		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 3		/−PAC−/
+DEC 3		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 2		/−INKY−/
+DEC 3		/−CLYDE−/
+DEC 1		/−PAC−/
+DEC 2		/−BLINKY−/
+DEC 2		/−PINKY−/
+DEC 3		/−INKY−/
+DEC 2		/−CLYDE−/
+DEC 2		/−PAC−/
+DEC 1		/−BLINKY−/
+DEC 3		/−PINKY−/
+DEC 4		/−INKY−/
+DEC 100
+/-------------------- Variables Generacion Mapa ------------------------------
+OFFSET, HEX F00
+MAP_POSITION, HEX F00
+ONE, DEC 1
+PARED_COLOR, HEX 421B
+
+BOLITA_COLOR, HEX 7FFF
+
+ESTEROIDE_COLOR, HEX 7E60
+
+clydeRow, DEC 6
+clydeColumn, DEC 7
+CLYDE_COLOR, HEX 7EF1
+
+pinkyRow, DEC 6
+pinkyColumn, DEC 8
+PINKY_COLOR, HEX 7EFB
+
+inkyRow, DEC 7
+inkyColumn, DEC 7
+INKY_COLOR, HEX 3FB
+
+blinkyRow, DEC 7
+blinkyColumn, DEC 8
+BLINKY_COLOR, HEX 7C00
+
+pac-manRow, DEC 12
+pac-manColumn, DEC 11
+PAC-MAN_COLOR, HEX 7FE0
+
+CONSUMIBLES_TOTALES, DEC 8
+/ ------------------- Variables calculo Posicion ---------------------
+Row, DEC 0
+TempRow, DEC 0
+Column, DEC 0
+TempColumn, DEC 0
+Total, DEC 0
+Direccion, DEC 0
+Temp, DEC 0
+Index, HEX EF0
+Inicio, HEX EF0
+Dir, DEC 0
+/ ------------------- Constantes -------------------------------------
+Zero, DEC 0
+One, DEC 1
+Two, DEC 2
+Three, DEC 3
+Four, DEC 4
+Ten, DEC 10
+Sixteen, DEC 16
+Cien, DEC 100
+DoscientosCuarenta, DEC 240
+/------------------- Variables Movimiento -----------------------------
+Color, DEC 0
+Limite, DEC 15
+SeMovio, DEC 0			/ 0 = No se movio, 1 = Si se movio
+/ ----------------- Variables Actualizacion ---------------------------
+RowA, Dec 0
+ColumnA, DEC 0
+ColorNegro, HEX 0
+ColorActualizacion, HEX 0
+ColorPac, HEX 0 / Memoria Pac-Man
+ColorBlinky, HEX 0 / Memoria Blinky
+ColorPinky, HEX 0 / Memoria Pinky
+ColorInky, HEX 0 / Memoria Inky
+ColorClyde, HEX 0 / Memoria Clyde
+PacmanID, DEC 0
+FantasmaID, DEC 1
+ActorType, DEC 0 	/ 0 = Pac‑Man, 1 = Fantasma
+/------------------ Variables Reaparicion ----------------------------
+ROWPACMAN, DEC 0
+COLUMNPACMAN, DEC 0
+WaitingPacman, DEC 0
+ROWBLINKY, DEC 0
+COLUMNBLINKY, DEC 0
+WaitingBlinky, DEC 0		/ 0 = vivo en tablero, 1 = esperando respawn
+ROWPINKY, DEC 0
+COLUMNPINKY, DEC 0
+WaitingPinky, DEC 0
+ROWINKY, DEC 0
+COLUMNINKY, DEC 0
+WaitingInky, DEC 0
+ROWCLYDE, DEC 0
+COLUMNCLYDE, DEC 0
+WaitingClyde, DEC 0
+Fantasma, DEC 0
+Indicador, DEC 0
+IndicadorPac, DEC 0
+/------------------ Variables de puntaje y esteroides ----------------
+Vidas, DEC 3
+Puntaje, DEC 0
+Incremento, DEC 0
+Poder, DEC 0
+Duracion, Dec 32			/ Minimo debe tener un valor de 1, no puede ser 0
+DuracionPoder, DEC 0
+PuntosComidos, DEC 0
+/-------------------------- MainLoop ------------------------------------------
+MainLoop, HEX 0
+Loop,	  JnS MoverPacman
+		  Load PuntosComidos
+		  Subt CONSUMIBLES_TOTALES
+		  SkipCond 0C00
+		  JumpI MainLoop
+		  Jns MoverBlinky
+		  Jns MoverPinky
+		  Jns MoverInky
+		  JnS MoverClyde
+		  Jump Loop
+	
+/------------------ Calculo de posicion Row / Column --------------------------
+CalcPos, HEX 0
+		 Load Row
+		 /Store TempRow
+		 /Load Column
+		 /Store TempColumn
+		 Load Zero
+		 Store Total
+		 Jump Rowx16
+
+FinalPos, Load Total
+		  Add Column
+		  Add OFFSET
+		  Store Direccion
+		  JumpI CalcPos
+
+Rowx16, Load Row	/ Row * 16
+		Add Index	/ Espacio de memoria donde comienza el array de multiplicaciones
+		Store Dir	/ Direccion del resultado de la multiplicacion
+		LoadI Dir	/ Cargas resultado
+		Store Total / Almacenas
+		Jump FinalPos
+
+IncializarArray, HEX 0
+Rellenar,		 Load Temp		/ Se carga el primer valor (0)
+				 StoreI Inicio			/ Se guarda en la direccion de inicio
+				 Add Sixteen
+				 Store Temp
+				 Load Inicio
+				 Add One
+				 Store Inicio
+				 Load Temp
+				 Subt DoscientosCuarenta
+				 SkipCond 800
+				 Jump Rellenar
+				 JumpI IncializarArray
+/-------------------------- InicializarPersonajes ------------------------------
+InicializarPersonajes, HEX 0
+					   Load pac-manRow			/ Coordenadas iniciales de Pacman
+					   Store ROWPACMAN
+					   Load pac-manColumn
+					   Store COLUMNPACMAN
+					   Load clydeRow			/ Coordenadas iniciales de Clyde
+					   Store ROWCLYDE
+					   Load clydeColumn
+					   Store COLUMNCLYDE
+					   Load blinkyRow			/ Coordenadas iniciales de Blinky
+					   Store ROWBLINKY
+					   Load blinkyColumn
+					   Store COLUMNBLINKY
+					   Load pinkyRow			/ Coordenadas iniciales de Pinky
+					   Store ROWPINKY
+					   Load pinkyColumn
+					   Store COLUMNPINKY
+					   Load inkyRow				/ Coordenadas iniciales de Inky
+					   Store ROWINKY
+					   Load inkyColumn
+					   Store COLUMNINKY
+					   JumpI InicializarPersonajes
+/ ------------------------- Funcion de movimiento ------------------------------
+MoverArriba, HEX 0
+			 Load One
+			 Store SeMovio		/ Indicamos por default que el objeto si se mueve, posteriormente en colisiones este bool puede cambiar
+			 JnS Actualizar	 	/ actualiza pixel viejo en base al color que se encontraba originalmente 
+			 Load Column
+			 Store TempColumn
+			 Load Row
+			 Store TempRow
+			 Subt One
+			 SkipCond 000
+			 Jump SigueU
+			 Load Limite		/ Logica para crear efecto pacman al llegar al borde Superior
+SigueU,		 Store Row
+			 JnS CalcPos		/ Direccion destino
+			 /- Identificamos que objeto se encuentra en la posicion destino -/
+			 Jns QueObjetoEs	 
+			 JumpI MoverArriba
+			 
+
+MoverAbajo, Hex 0
+			Load One
+			Store SeMovio
+			JnS Actualizar
+			Load Column
+			Store TempColumn
+			Load Row
+			Store TempRow
+			Add One
+			Store Row
+			Subt Limite
+			SkipCond 800
+			Jump SigueD
+			Load Zero
+			Store Row
+SigueD,		JnS CalcPos
+			Jns QueObjetoEs
+			JumpI MoverAbajo
+
+MoverIzquierda, HEX 0
+			Load One
+			Store SeMovio
+			Jns Actualizar
+			Load Row
+			Store TempRow
+			Load Column
+			Store TempColumn
+			Subt One
+			SkipCond 000
+			Jump SigueL
+			Load Limite
+SigueL,		Store Column
+			JnS CalcPos
+			JnS QueObjetoEs
+			JumpI MoverIzquierda
+
+MoverDerecha, HEX 0
+			Load One
+			Store SeMovio
+			Jns Actualizar
+			Load Row
+			Store TempRow
+			Load Column
+			Store TempColumn
+			Add One
+			Store Column
+			Subt Limite
+			SkipCond 800
+			Jump SigueR
+			Load Zero
+			Store Column
+SigueR,		JnS CalcPos
+			JnS QueObjetoEs
+			JumpI MoverDerecha
+
+MoverPacman, HEX 0
+			 Load PacmanID
+			 Store ActorType
+			 Load WaitingPacman
+			 SkipCond 400
+			 Jump ReaparecerPacman
+			 Load pac-manRow
+			 Store Row
+			 Load pac-manColumn
+			 Store Column
+			 Load PAC-MAN_COLOR
+			 Store Color
+			 Load ColorPac				/ Cargamos la memoria de pacman al colorActualizacion
+			 Store ColorActualizacion
+			 Jns MoverAleatoriamente
+			 Load ColorActualizacion	/ Guardamos en la memoria de pacman el valor que se encontraba en la casilla a la cual se movio
+			 Store ColorPac
+			 JumpI MoverPacman
+ReaparecerPacman, Load Zero
+				  Store IndicadorPac
+				  Jns ReaparicionPacman
+				  JumpI MoverPacman
+
+MoverBlinky, HEX 0
+			 Load FantasmaID
+			 Store ActorType
+			 Load WaitingBlinky
+			 SkipCond 400				/ Comprobamos si blinky esta esperando a ser reaparecido o no 
+			 Jump ReaparecerBlinky		/ Si WaitingBlinky = 1, se reaparece el fantasma 
+			 Load blinkyRow				/ Si WaitingBlinky = 0, se realiza un movimiento
+			 Store Row
+			 Load blinkyColumn
+			 Store Column
+			 Load BLINKY_COLOR
+			 Store Color
+			 Load ColorBlinky
+			 Store ColorActualizacion
+			 JnS MoverAleatoriamente
+			 Load ColorActualizacion	/ Guardamos en la memoria de blinky el valor que se encontraba en la casilla a la cual se movio
+			 Store ColorBlinky
+			 JumpI MoverBlinky
+ReaparecerBlinky, Load Zero
+				  Store Indicador
+				  Jns ReaparicionBlinky		/ intenta reaparecer
+				  JumpI MoverBlinky			/ fin de iteración, no se mueve si sigue esperando
+
+MoverPinky, HEX 0
+			Load FantasmaID
+			Store ActorType
+			Load WaitingPinky
+			SkipCond 400
+			Jump ReaparecerPinky
+			Load pinkyRow
+			Store Row
+			Load pinkyColumn
+			Store Column
+			Load PINKY_COLOR
+			Store Color
+			Load ColorPinky
+			Store ColorActualizacion
+			Jns MoverAleatoriamente
+			Load ColorActualizacion
+			Store ColorPinky
+			JumpI MoverPinky
+ReaparecerPinky, Load Zero
+				 Store Indicador
+				 Jns ReaparicionPinky
+				 JumpI MoverPinky
+
+MoverInky, HEX 0
+			Load FantasmaID
+			Store ActorType
+			Load WaitingInky
+			SkipCond 400
+			Jump ReaparecerInky 
+			Load inkyRow
+			Store Row
+			Load inkyColumn
+			Store Column
+			Load INKY_COLOR
+			Store Color
+			Load ColorInky
+			Store ColorActualizacion
+			Jns MoverAleatoriamente
+			Load ColorActualizacion
+			Store ColorInky
+		    JumpI MoverInky
+ReaparecerInky,  Load Zero
+				 Store Indicador
+				 Jns ReaparicionInky
+				 JumpI MoverInky
+			 
+MoverClyde, HEX 0 
+			Load FantasmaID
+			Store ActorType
+			Load WaitingClyde
+			SkipCond 400
+			Jump ReaparecerClyde
+			Load clydeRow
+			Store Row
+			Load clydeColumn
+			Store Column
+			Load CLYDE_COLOR
+			Store Color
+			Load ColorClyde
+			Store ColorActualizacion
+			Jns MoverAleatoriamente
+			Load ColorActualizacion
+			Store ColorClyde
+			JumpI MoverClyde
+ReaparecerClyde, Load Zero
+				 Store Indicador
+				 Jns ReaparicionClyde
+				 JumpI MoverClyde
+			
+/ ------------------------ Funcion Actualizar ---------------------------------
+Actualizar, Hex 0 	/ Apaga el pixel encendido en el display
+			JnS CalcPos
+			Load ColorActualizacion 	/ Es el color que estuvo originalmente en la posicion a la que te moviste
+			StoreI Direccion
+			JumpI Actualizar
+
+ActualizarXY, HEX 0 / Actualiza las nuevas coordenadas 
+			  Load Color
+			  Subt PAC-MAN_COLOR
+			  SkipCond 400
+			  Jump EsBlinky
+			  Load Row
+			  Store pac-manRow
+			  Load Column
+			  Store pac-manColumn
+			  JumpI ActualizarXY
+EsBlinky,     Load Color
+			  Subt BLINKY_COLOR
+			  SkipCond 400
+			  Jump EsPinky
+			  Load Row
+			  Store blinkyRow
+			  Load Column
+			  Store blinkyColumn
+			  JumpI ActualizarXY
+EsPinky,	  Load Color
+			  Subt PINKY_COLOR
+			  SkipCond 400
+			  Jump EsInky
+			  Load Row
+			  Store pinkyRow
+			  Load Column
+			  Store pinkyColumn
+			  JumpI ActualizarXY
+EsInky,		  Load Color
+			  Subt INKY_COLOR
+			  SkipCond 400
+			  Jump EsClyde
+			  Load Row
+			  Store inkyRow
+			  Load Column
+			  Store inkyColumn
+			  JumpI ActualizarXY
+EsClyde,	  Load Row
+			  Store clydeRow
+			  Load Column
+			  Store clydeColumn
+			  JumpI ActualizarXY
+
+/------------------- Funciones Auxiliares de movimiento ----------------------------
+QueObjetoEs, HEX 0
+EsNegro,	 LoadI Direccion		/ Obtenemos el objeto de la posicion destino -/
+			 Subt ColorNegro
+			 SkipCond 400
+			 Jump EsPared
+			 Load ActorType
+			 Subt FantasmaID
+			 SkipCond 400
+			 JnS ActualizarDuracion
+			 Jns Comer
+			 JumpI QueObjetoEs
+EsPared,	 LoadI Direccion
+			 Subt PARED_COLOR
+			 SkipCond 400
+			 Jump EsPunto
+			 Load TempRow		/ Deshacemos el movimiento cargando las coordenadas antes de la manipulacion ya que no se pudo mover
+			 Store Row
+			 Load TempColumn
+			 Store Column
+			 Load Zero
+			 Store SeMovio		/ Indicamos que el sujeto no se pudo mover
+			 JumpI QueObjetoEs 
+EsPunto,	 LoadI Direccion
+			 Subt BOLITA_COLOR
+			 SkipCond 400
+			 Jump EsEsteroide
+			 Load ActorType
+			 Subt PacmanID
+			 SkipCond 400
+			 Jump Fan
+			 Jns Comer			/ Pacman se come el punto/ Falta agregar contador de puntos
+			 Jns ActualizarDuracion
+			 Load One			/ Cargamos el puntaje a ser sumado, en este caso 1
+			 Store Incremento
+			 Add PuntosComidos
+			 Store PuntosComidos
+			 Jns ActualizarPuntaje
+			 Jumpi QueObjetoEs
+Fan, 		 Jns NoComer		/ El fantasma no se come el punto
+			 JumpI QueObjetoEs
+
+EsEsteroide, LoadI Direccion
+			 Subt ESTEROIDE_COLOR
+			 SkipCond 400
+			 Jump EsPacman
+			 Load ActorType
+			 Subt PacmanID
+			 SkipCond 400
+			 Jump Fan			 / Usamos la misma logica de fan ya que el fantasma tampoco se come el esteroide
+			 JnS Comer
+			 Jns ActivarPoder
+			 JumpI QueObjetoEs
+
+EsPacman,	 LoadI Direccion
+			 Subt PAC-MAN_COLOR
+			 SkipCond 400
+			 Jump EsFantasma
+			 Load Poder			/ Verificar poder del pacman
+			 SkipCond 400
+			 Jump NoPudoComer	/ El fantasma intenta reaparecer ya que pacman tiene un poder
+			 Jns Comer		/ El fantasma se come a pacman si no tiene poder
+			 Load One
+			 Store IndicadorPac
+			 Jns ReaparicionPacman				
+			 JumpI QueObjetoEs
+NoPudoComer, Load Color
+			 Store Fantasma
+			 Load Ten 
+			 Store Incremento 
+			 JnS ActualizarPuntaje
+			 Jump ReaparecerFantasma
+
+EsFantasma,  Load ActorType
+			 Subt PacmanID
+			 SkipCond 400
+			 Jump ComerSalir
+			 Load Poder
+			 Subt One
+			 SkipCond 400
+			 Jump PacmanMuere
+			 LoadI Direccion
+			 Store Fantasma
+			 JnS Comer
+			 Load Ten
+			 Store Incremento
+			 Jns ActualizarPuntaje
+			 Jump ReaparecerFantasma
+			 JumpI QueObjetoEs
+PacmanMuere, Load One
+			 Store IndicadorPac
+			 Jns ReaparicionPacman
+			 JumpI QueObjetoEs
+
+Comer, HEX 0
+	   Load ColorNegro			
+	   Store ColorActualizacion	
+	   Load Color					
+	   StoreI Direccion	/ Direccion Destino
+	   JnS ActualizarXY
+	   JumpI Comer
+	   
+NoComer, HEX 0
+		LoadI Direccion		
+		Store ColorActualizacion
+		Load Color
+		StoreI Direccion
+		JnS ActualizarXY
+		JumpI NoComer
+
+ComerSalir, Jns Comer
+			JumpI QueObjetoEs
+
+/------------------- Funciones de Reaparicion --------------------------------------
+ReaparicionPacman, HEX 0
+				   Load Vidas 
+				   Subt One
+				   Store Vidas
+				   SkipCond 0C00
+				   Jump End
+				   Load One 
+				   Store WaitingPacman
+				   Load ROWPACMAN
+				   Store Row
+				   Load COLUMNPACMAN
+				   Store Column
+				   Load PAC-MAN_COLOR
+				   Store Color
+				   JnS CalcPos
+				   LoadI Direccion
+				   Subt ColorNegro
+				   SkipCond 400 
+				   Jump Fant 
+				   Store WaitingPacman
+				   Jns Comer
+Fant,			   JumpI ReaparicionPacman
+				      
+ReaparicionBlinky, HEX 0
+				   Load ROWBLINKY
+				   Store Row
+				   Load COLUMNBLINKY
+				   Store Column
+				   Load BLINKY_COLOR
+				   Store Color
+				   JnS CalcPos
+				   Jns ReaparicionPlus
+				   JumpI ReaparicionBlinky
+
+ReaparicionPinky, HEX 0
+				  Load ROWPINKY
+				  Store Row
+				  Load COLUMNPINKY
+				  Store Column
+				  Load PINKY_COLOR
+				  Store Color
+				  JnS CalcPos
+				  Jns ReaparicionPlus
+				  JumpI ReaparicionPinky
+
+ReaparicionInky, HEX 0
+				 Load ROWINKY
+				 Store Row
+				 Load COLUMNINKY
+				 Store Column
+				 Load INKY_COLOR
+				 Store Color
+				 JnS CalcPos
+				 Jns ReaparicionPlus
+				 JumpI ReaparicionInky
+				 
+ReaparicionClyde, HEX 0
+				  Load ROWCLYDE
+				  Store Row
+				  Load COLUMNCLYDE
+				  Store Column
+				  Load CLYDE_COLOR
+				  Store Color
+				  JnS CalcPos
+				  Jns ReaparicionPlus
+				  JumpI ReaparicionClyde
+
+ReaparecerFantasma, Load One
+					Store Indicador
+					Load Fantasma
+					Subt BLINKY_COLOR
+					SkipCond 400
+					Jump Pinky 
+					Load One
+					Store WaitingBlinky
+					Jns ReaparicionBlinky
+					JumpI QueObjetoEs
+Pinky,				Load Fantasma
+					Subt PINKY_COLOR
+					SkipCond 400
+					Jump Inky 
+					Load One
+					Store WaitingPinky
+					Jns ReaparicionPinky
+					JumpI QueObjetoEs
+Inky,				Load Fantasma
+					Subt INKY_COLOR
+					SkipCond 400
+					Jump Clyde 
+					Load One
+					Store WaitingInky
+					Jns ReaparicionInky
+					JumpI QueObjetoEs
+Clyde,				Load One
+					Store WaitingClyde
+					Jns ReaparicionClyde
+					JumpI QueObjetoEs
+
+ReaparicionPlus, HEX 0					/- Esta rutina indica a los fantasmas si pueden reaparecer, es decir, si pacman se encuentra en 
+				 LoadI Direccion		/ la casilla que debe reaparecer, y este tiene un poder activado, no reaparecera
+				 Subt PAC-MAN_COLOR		/ si pacman no tiene poder, el fantasma reaparece y come a pacman
+				 SkipCond 400
+				 Jump IMejora
+				 Load Poder
+				 SkipCond 400
+				 JumpI ReaparicionPlus		/ No reaparece y se queda esperando
+IMejora,		 Load Color					/- Verificacion de que fantasma es y actualizar si se encuentra esperando a reaparecer o no
+B,				 Subt BLINKY_COLOR			/ 0 =  esta vivo, 1 = esperando a ser reaparecido
+				 SkipCond 400
+				 Jump I 
+				 Store WaitingBlinky
+				 Jump VerIndicador
+I, 				 Load Color
+				 Subt INKY_COLOR
+				 SkipCond 400
+				 Jump P 
+				 Store WaitingInky
+				 Jump VerIndicador
+P,				 Load Color
+				 Subt PINKY_COLOR
+				 SkipCond 400
+				 Jump C 
+				 Store WaitingPinky
+				 Jump VerIndicador
+C,				 Load Zero
+				 Store WaitingClyde
+VerIndicador,	 Load Indicador			/ Si indicador = 1, significa que la llamada se realizo desde reaparecerFantasma
+				 Subt One
+				 SkipCond 400
+				 Jump R2Mejora			/ Si indicador = 0, la llamada se realizo directamente en moverBlinky
+R1Mejora,		 Load Zero				/ <- Aplica cuando es llamada desde una colision, cuando no se directamente que fantasma es
+				 Store Indicador
+				 Jump EsNegro
+R2Mejora,		 Jns QueObjetoEs 		/ <- aplica para cuando se llama a reaparicion(nombre del fantasma) directamente
+				 JumpI ReaparicionPlus / En ambos casos se resetea el Indicador ya que el valor default es 0, es decir llamada directa
+				 
+/-------------------- Puntuacion y Esteroide -----------------------
+ActualizarPuntaje, HEX 0
+				   Load Puntaje
+				   Add Incremento
+				   Store Puntaje
+				   Output
+				   JumpI ActualizarPuntaje
+
+ActivarPoder, HEX 0 
+			  Load One
+			  Store Poder
+			  Load Duracion
+			  Store DuracionPoder
+			  JumpI ActivarPoder
+DesactivarPoder, HEX 0
+				 Load Zero
+				 Store Poder
+				 JumpI DesactivarPoder
+				 
+ActualizarDuracion, HEX 0
+				   Load Poder
+				   Subt One
+				   SkipCond 400
+				   JumpI ActualizarDuracion			/ Si el poder no esta activado no se realiza nada
+				   Load DuracionPoder
+				   Subt One
+				   Store DuracionPoder
+				   SkipCond 400 
+				   JumpI ActualizarDuracion
+				   JnS DesactivarPoder
+				   JumpI ActualizarDuracion
+
+/---------------------- Movimiento Aleatorio -------------------------
+MoverAleatoriamente, HEX 0
+					 LoadI IndiceMovimiento
+					 Subt Cien
+					 SkipCond 400
+					 Jump Arriba
+					 Load InicioMov
+					 Store IndiceMovimiento
+Arriba,			     LoadI IndiceMovimiento
+					 Subt One
+					 SkipCond 400
+					 Jump Abajo
+AuxArriba,			 Jns MoverArriba
+					 Load SeMovio
+					 SkipCond 400		/ Si no se movio, vamos a auxAbajo, caso contrario significa que SeMovio = 1, por tanto salimos
+					 Jump SalirMov
+					 Jump AuxAbajo
+Abajo,				 LoadI IndiceMovimiento
+					 Subt Two
+					 SkipCond 400
+					 Jump Izquierda
+AuxAbajo,			 JnS MoverAbajo
+				     Load SeMovio
+					 SkipCond 400
+					 Jump SalirMov
+					 Jump AuxIzquierda
+Izquierda,			 LoadI IndiceMovimiento
+					 Subt Three
+					 SkipCond 400
+					 Jump Derecha 
+AuxIzquierda,		 Jns MoverIzquierda
+					 Load SeMovio
+					 SkipCond 400
+					 Jump SalirMov
+Derecha,			 Jns MoverDerecha
+					 Load SeMovio
+					 SkipCond 400
+					 Jump SalirMov
+					 Jump AuxArriba
+SalirMov,			 Load IndiceMovimiento
+					 Add One
+					 Store IndiceMovimiento
+					 JumpI MoverAleatoriamente
+
+/----------------------- GenerarMapa ------------------------------------
+Generarmapa, HEX 0
+LOAD OFFSET
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD ESTEROIDE_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD ESTEROIDE_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD CLYDE_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PINKY_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD INKY_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD BLINKY_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD ESTEROIDE_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PAC-MAN_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD ESTEROIDE_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD BOLITA_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+STORE MAP_POSITION
+LOAD PARED_COLOR
+STOREI MAP_POSITION
+LOAD MAP_POSITION
+ADD ONE
+		    JumpI Generarmapa
